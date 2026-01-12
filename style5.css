@@ -90,3 +90,41 @@ footer {
         padding: 25px;
     }
 }
+
+.button-group {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #00bcd4;
+    color: #000;
+}
+
+.gallery {
+    margin-top: 25px;
+}
+
+.group {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.group img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}

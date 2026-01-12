@@ -26,8 +26,8 @@
 
     <p>
         During this module, I have learned the uses of HTML and CSS and how
-        to make  and style a responsive website. and also i  understand
-        HTML tags such as header, nav, main, and footer.Learning this module 
+        to make and style a responsive website. and also i understand
+        HTML tags such as header, nav, main, and footer. Learning this module 
         was challenging but with the help of my tutor it became easy and enjoyable.
     </p>
 
@@ -48,11 +48,76 @@
         Video demonstration link:
         <a href="link">YouTube Video</a>
     </p>
+    
+    <p>
+        I created three buttons to display different sets of images:
+        first button shows images of my HTML validated on W3C Validator.
+        second button shows images of my CSS validated on W3C Validator.
+        third button shows the wireframe images of my project.
+        When a button is clicked, only the related images are displayed.
+    </p>
+
+    <div class="button-group">
+        <button onclick="show1()">html images</button>
+        <button onclick="show2()">css images</button>
+        <button onclick="show3()">wireframe images</button>
+    </div>
+
+    <div class="gallery">
+
+        <div class="group" id="group1">
+            <img src="index.jpg">
+            <img src="contact.jpg">
+            <img src="project.jpg">
+            <img src="videodemo.jpg">
+            <img src="sitereport.jpg">
+        </div>
+
+        <div class="group" id="group2">
+            <img src="style1.jpg">
+            <img src="style2.jpg">
+            <img src="style3.jpg">
+            <img src="style4.jpg">
+            <img src="style5.jpg">
+        </div>
+
+        <div class="group" id="group3">
+            <img src="wf1.jpg">
+            <img src="wf2.jpg">
+        </div>
+
+    </div>
+
 </main>
 
 <footer>
-    <p> Pawal Lhomi Bhote</p>
+    <p>Pawal Lhomi Bhote</p>
 </footer>
+
+<script>
+    function hideAll() {
+        document.getElementById("group1").style.display = "none";
+        document.getElementById("group2").style.display = "none";
+        document.getElementById("group3").style.display = "none";
+    }
+
+    function show1() {
+        hideAll();
+        document.getElementById("group1").style.display = "grid";
+    }
+
+    function show2() {
+        hideAll();
+        document.getElementById("group2").style.display = "grid";
+    }
+
+    function show3() {
+        hideAll();
+        document.getElementById("group3").style.display = "grid";
+    }
+
+    hideAll();
+</script>
 
 </body>
 </html>
